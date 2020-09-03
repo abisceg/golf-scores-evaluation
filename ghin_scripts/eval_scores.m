@@ -34,7 +34,7 @@ function [retval] = eval_scores (scores, totalnumscores, numscorestoeval)
   nummostfreqscore = sum(scores(1,:)==mode(scores))
   
   figure;
-  plot(scores);
+  plot(scores,'-k*');
   ylim([(min(scores)-12),(max(scores)+16)]);
   title("Scores");
   annotation('textbox',[.72,.55,.2,.2],'String',...
