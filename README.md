@@ -1,3 +1,3 @@
 # golf-scores-evaluation
 
-Octave scripts which plot and printout information on your latest golf scores
+Python scripts to pull data via ghin and plot scores
