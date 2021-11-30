@@ -29,7 +29,7 @@ def ghinLogin (debug=False):
   headers = {
     'Content-Type': 'application/json',
     # also get from web developer when logging, in sorry not sure how to automate
-    'Cookie': 'GHIN2020_api2_production= '
+    'Cookie': 'GHIN2020_api2_production=1GYRq4pmYU5q%2BoqsZmDFq6KxMMYNVer8ooTFih7FyjgI5y%2F3ITa7Ma4wJBbOYlhdoN2xkvSbTdBrTeWy5A%3D%3D--Ri9VBquMmxMVXLQ2--L7GVlNoWulBu4TB9vc9ilQ%3D%3D'
   }
   # Make request call
   response = requests.request("POST", url, headers = headers, data = payload)
