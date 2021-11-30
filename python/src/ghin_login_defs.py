@@ -12,8 +12,11 @@ def ghinLogin (debug=False):
   os.environ['GHIN_API_PW'] = gp.getpass("Ghin Password: ")
   # Still not sure how/when/where this is generated.
   # use web developer to grab token when logging in, listed in Request Header
-  os.environ['GHIN_TOKEN'] = 
-
+  #os.environ['GHIN_TOKEN'] = 
+  # path to token and store it
+  pathtotoken = './token.txt'
+  with open(pathtotoken, 'r') as file:
+    os.environ['GHIN_TOKEN'] = file.read().rstrip()
   # Print for Debugging
   if debug == True:
     print(os.getenv('GHIN_API_USER'))
